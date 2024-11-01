@@ -15,7 +15,12 @@ let multipliedAsDoubles = Double(x) * y
 print("Result of multiplication as doubles: \(multipliedAsDoubles)")
 
 //:  Are the values of `multipliedAsIntegers` and `multipliedAsDoubles` different? Print a statement to the console explaining why.
-
+if multipliedAsIntegers != multipliedAsDoubles {
+    print("The values of multipliedAsIntegers and multipliedAsDoubles are different.")
+    print("This is because when converting y to Int, the decimal part is truncated, resulting in a different value.")
+} else {
+    print("The values of multipliedAsIntegers and multipliedAsDoubles are the same.")
+}
 
 /*:
 [Previous](@previous)  |  page 7 of 8  |  [Next: App Exercise - Converting Types](@next)
