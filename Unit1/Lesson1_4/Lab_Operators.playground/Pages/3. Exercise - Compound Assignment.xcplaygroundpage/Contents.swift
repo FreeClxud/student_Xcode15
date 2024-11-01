@@ -3,7 +3,13 @@
  
  Declare a variable whose value begins at 10. Using addition, update the value to 15 using the compound assignment operator. Using multiplication, update the value to 30 using compound assignment. Print out the variable's value after each assignment.
  */
+var value = 10
 
+value += 5
+print("After addition, the value is \(value)")
+
+value *= 2
+print("After multiplication, the value is \(value)")
 
 /*:
  Create a variable called `pennyBank` that begins at 0. You will use this to keep track of money you earn and spend. For each point below, use the right compound assignment operator to update the balance in your penny bank.
@@ -15,7 +21,22 @@
 - You spend 3 dollars at a convenience store
  
  Print the balance of your penny bank after each step.
- */
+ */var pennyBank = 0
+
+pennyBank += 10
+print("After mowing the lawn, the balance is \(pennyBank)")
+
+pennyBank += 20
+print("After doing odd jobs, the balance is \(pennyBank)")
+
+pennyBank /= 2
+print("After dinner and a movie, the balance is \(pennyBank)")
+
+pennyBank *= 3
+print("After washing windows, the balance is \(pennyBank)")
+
+pennyBank -= 3
+print("After spending at the convenience store, the balance is \(pennyBank)")
 
 
 /*:
