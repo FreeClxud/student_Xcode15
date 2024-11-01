@@ -5,6 +5,9 @@
  */
 var dollars = 0
 
+if dollars == 0 {
+    print("Sorry, kid. You're broke!")
+}
 
 //:  `dollars` has been updated below to have a value of 10. Write an an if-else statement that prints "Sorry, kid. You're broke!" if `dollars` has a value of 0, but prints "You've got some spending money!" otherwise. Observe what is printed to the console.
 dollars = 10
