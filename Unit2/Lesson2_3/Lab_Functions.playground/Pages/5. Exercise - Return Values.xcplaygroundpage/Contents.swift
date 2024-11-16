@@ -11,7 +11,12 @@ print(result)
 
 
 //:  Write a function that takes two `Int` arguments, and returns an `Int`. The function should multiply the two arguments, add 2, then return the result. Use the function and print the result.
+func multiplyAndAddTwo(a: Int, b: Int) -> Int {
+    return (a * b) + 2
+}
 
+let result = multiplyAndAddTwo(a: 3, b: 4)
+print(result)
 
 /*:
 [Previous](@previous)  |  page 5 of 6  |  [Next: App Exercise - Separating Functions](@next)
