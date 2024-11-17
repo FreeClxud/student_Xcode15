@@ -23,22 +23,40 @@ print("Area of rectangle: \(myRectangle.area)")
  Create an instance of `Height` and then change one of its properties. Print out the other property to ensure that it was adjusted accordingly.
  */
 struct Height {
-    var heightInInches: Double
+    var heightInInches: Double {
+        didSet {
+            if heightInCentimeters != heightInInches * 2.54 {
+                heightInCentimeters = heightInInches * 2.54
+            }
+        }
+    }
     
-    var heightInCentimeters: Double
+    var heightInCentimeters: Double {
+        didSet {
+            if heightInInches != heightInCentimeters / 2.54 {
+                heightInInches = heightInCentimeters / 2.54
+            }
+        }
+    }
     
     init(heightInInches: Double) {
         self.heightInInches = heightInInches
-        self.heightInCentimeters = heightInInches*2.54
+        self.heightInCentimeters = heightInInches * 2.54
     }
     
     init(heightInCentimeters: Double) {
         self.heightInCentimeters = heightInCentimeters
-        self.heightInInches = heightInCentimeters/2.54
+        self.heightInInches = heightInCentimeters / 2.54
     }
 }
 
+var personHeight = Height(heightInInches: 65)
+print("Height in inches: \(personHeight.heightInInches)")
+print("Height in centimeters: \(personHeight.heightInCentimeters)")
 
+personHeight.heightInInches = 70
+print("Height in inches: \(personHeight.heightInInches)")
+print("Height in centimeters: \(personHeight.heightInCentimeters)")
 
 /*:
 [Previous](@previous)  |  page 7 of 10  |  [Next: App Exercise - Mile Times and Congratulations](@next)
