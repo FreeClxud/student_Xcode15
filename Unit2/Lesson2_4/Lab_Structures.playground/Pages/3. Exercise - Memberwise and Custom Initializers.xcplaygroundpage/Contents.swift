@@ -4,13 +4,41 @@
  If you completed the exercise Structs, Instances, and Default Values, you created a `GPS` struct with default values for properties of `latitude` and `longitude`. Create your `GPS` struct again, but this time do not provide default values. Both properties should be of type `Double`.
  */
 struct GPS {
+    var latitude: Double
+    var longitude: Double
+}
+
+let somePlace = GPS(latitude: 51.514004, longitude: 0.125226)
+
+print("Latitude: \(somePlace.latitude)")
+print("Longitude: \(somePlace.longitude)")
+
 
 
 }
 //:  Now create a constant instance of `GPS` called `somePlace`, and use the memberwise initializer to set `latitude` to 51.514004, and `longitude` to 0.125226. Print the values of `somePlace`'s properties.
+struct GPS {
+    var latitude: Double
+    var longitude: Double
+}
+
+let somePlace = GPS(latitude: 51.514004, longitude: 0.125226)
+
+print("Latitude: \(somePlace.latitude)")
+print("Longitude: \(somePlace.longitude)")
 
 
 //:  In Structs, Instance, and Default Values, you also created a `Book` struct with properties `title`, `author`, `pages`, and `price`. Create this struct again without default values. Give each property the appropriate type. Declare your `favoriteBook` instance and pass in the values of your favorite book using the memberwise initializer. Print a statement about your favorite book using `favoriteBook`'s properties.
+struct Book {
+    var title: String
+    var author: String
+    var pages: Int
+    var price: Double
+}
+
+let favoriteBook = Book(title: "1984", author: "George Orwell", pages: 328, price: 9.99)
+
+print("My favorite book is '\(favoriteBook.title)' by \(favoriteBook.author). It has \(favoriteBook.pages) pages and costs $\(favoriteBook.price).")
 
 
 /*:
