@@ -7,7 +7,14 @@ struct Rectangle {
     var width: Int
     var height: Int
     
+    var area: Int {
+        return width * height
+    }
 }
+
+let myRectangle = Rectangle(width: 10, height: 5)
+print("Area of rectangle: \(myRectangle.area)")
+
 
 
 /*:
