@@ -2,11 +2,18 @@
 ## Exercise - Concatenation and Interpolation
  
  Create a `city` constant and assign it a string literal representing your home city. Then create a `state` constant and assign it a string literal representing your home state. Finally, create a `home` constant and use string concatenation to assign it a string representing your home city and state (i.e. Portland, Oregon). Print the value of `home`.
- */
+ */let city = "Los Angeles"
+let state = "California"
+let home = city + ", " + state
+print(home)
+
 
 
 //:  Use the compound assignment operator (`+=`) to add `home` to `introduction` below. Print the value of `introduction`.
 var introduction = "I live in "
+let home = "Los Angeles, California"
+introduction += home
+print(introduction)
 
 
 /*:
@@ -16,6 +23,9 @@ var introduction = "I live in "
  
  Insert `name` where indicated, and insert a mathematical expression that evaluates to your current age plus one where indicated.
  */
+let name = "Manuel"
+let age = 25
+print("My name is \(name) and after my next birthday I will be \(age + 1) years old.")
 
 
 /*:
